@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Perplexity Code",
+  title: "Hephaestus Code",
   description: "Claude Code, in Perplexity.",
 };
 

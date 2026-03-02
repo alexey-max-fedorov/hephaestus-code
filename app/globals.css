@@ -20,11 +20,11 @@ body {
   }
 
   .glow-blue {
-    box-shadow: 0 0 20px rgba(60, 130, 255, 0.3);
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
   }
 
   .glow-blue-hover:hover {
-    box-shadow: 0 0 30px rgba(60, 130, 255, 0.5);
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.5);
   }
 
   .animate-gradient-flow {

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-xl font-bold tracking-tighter">
-            Perplexity <span className="text-[#3C82FF]">Code</span>
+            Hephaestus <span className="text-[#F97316]">Code</span>
           </div>
           <div className="flex gap-8 text-sm text-zinc-500">
             <a

@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/">
           <div className="text-2xl font-bold tracking-tighter cursor-pointer">
-            Perplexity <span className="text-[#3C82FF]">Code</span>
+            Hephaestus <span className="text-[#F97316]">Code</span>
           </div>
         </Link>
 
@@ -26,7 +26,7 @@ export default function Header() {
             GitHub
           </a>
           <Link href="/get-started">
-            <button className="bg-[#3C82FF] hover:bg-[#3C82FF]/90 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[#3C82FF]/20 glow-blue-hover">
+            <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[#F97316]/20 glow-blue-hover">
               Get Started
             </button>
           </Link>
