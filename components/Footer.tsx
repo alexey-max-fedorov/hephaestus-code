@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+const DEMO_URL =
+  "https://www.perplexity.ai/spaces/hephaestus-code-public-djO4mFs7Rhm19vzo4JIajg";
+
 export default function Footer() {
   return (
     <footer className="border-t border-white/5 py-12 bg-[#0D0F14]">
@@ -9,6 +12,14 @@ export default function Footer() {
             Hephaestus <span className="text-[#F97316]">Code</span>
           </div>
           <div className="flex gap-8 text-sm text-zinc-500">
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Demo
+            </a>
             <Link href="/story" className="hover:text-white transition-colors">Story</Link>
             <a
               href="https://github.com/alexey-max-fedorov/hephaestus-code"

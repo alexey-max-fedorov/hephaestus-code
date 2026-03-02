@@ -4,6 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
+const DEMO_URL =
+  "https://www.perplexity.ai/spaces/hephaestus-code-public-djO4mFs7Rhm19vzo4JIajg";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,11 +31,14 @@ export default function Header() {
               GitHub
             </a>
           </div>
-          <Link href="/get-started">
-            <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[#F97316]/20 glow-blue-hover">
-              Get Started
-            </button>
-          </Link>
+          <a
+            href={DEMO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[#F97316]/20 glow-blue-hover"
+          >
+            Try it out
+          </a>
           <button
             className="md:hidden p-2 text-zinc-400 hover:text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -57,6 +63,15 @@ export default function Header() {
           <Link href="/get-started" onClick={() => setIsMenuOpen(false)}>
             <span className="text-lg font-medium text-zinc-400 hover:text-white">Get Started</span>
           </Link>
+          <a
+            href={DEMO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMenuOpen(false)}
+            className="text-lg font-medium text-[#F97316] hover:text-[#F97316]/80"
+          >
+            Try it out
+          </a>
         </div>
       )}
     </nav>
