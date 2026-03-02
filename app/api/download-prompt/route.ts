@@ -1,6 +1,6 @@
 export async function GET() {
   const res = await fetch(
-    "https://raw.githubusercontent.com/alexey-max-fedorov/perplexity-code/main/SYSTEM_PROMPT.md"
+    "https://raw.githubusercontent.com/alexey-max-fedorov/hephaestus-code/master/SYSTEM_PROMPT.md"
   );
   const content = await res.text();
 

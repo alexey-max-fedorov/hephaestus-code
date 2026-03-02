@@ -21,7 +21,6 @@ export default function GetStarted() {
       <Header />
 
       <main className="max-w-3xl mx-auto px-6 pt-40 pb-32">
-        {/* Back link */}
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-zinc-500 hover:text-white transition-colors text-sm mb-12 group"
@@ -30,7 +29,6 @@ export default function GetStarted() {
           Back
         </Link>
 
-        {/* Page header */}
         <div className="mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 text-[#F97316] text-xs font-medium mb-6">
             Setup Guide
@@ -57,7 +55,6 @@ export default function GetStarted() {
           </p>
         </div>
 
-        {/* Prerequisites */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4 text-zinc-200">Prerequisites</h2>
           <div className="p-5 rounded-2xl glass flex items-center gap-4">
@@ -78,41 +75,26 @@ export default function GetStarted() {
           </div>
         </div>
 
-        {/* Steps */}
         <div className="mb-16">
           <h2 className="text-xl font-bold mb-6 text-zinc-200">Setup Steps</h2>
           <div className="space-y-4">
-
-            {/* Step 1 */}
             <div className="p-6 rounded-2xl glass">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-sm font-bold text-[#F97316]">
-                  1
-                </div>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-sm font-bold text-[#F97316]">1</div>
                 <div className="flex-1">
                   <h3 className="font-bold text-lg mb-2">Create a Space</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed">
                     Go to{" "}
-                    <a
-                      href="https://www.perplexity.ai/spaces"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#F97316] hover:underline"
-                    >
-                      perplexity.ai/spaces
-                    </a>{" "}
+                    <a href="https://www.perplexity.ai/spaces" target="_blank" rel="noopener noreferrer" className="text-[#F97316] hover:underline">perplexity.ai/spaces</a>{" "}
                     and create a new Space.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Step 2 */}
             <div className="p-6 rounded-2xl glass">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-sm font-bold text-[#F97316]">
-                  2
-                </div>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-sm font-bold text-[#F97316]">2</div>
                 <div className="flex-1">
                   <h3 className="font-bold text-lg mb-2">Set the System Prompt</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-4">
@@ -129,8 +111,7 @@ export default function GetStarted() {
                       You are &quot;Hephaestus Code&quot;, a Claude-Code inspired Perplexity
                       Assistant who is specialized for coding.
                       <br />
-                      SYSTEM_PROMPT.md is your new system prompt. Make sure to
-                      fully read it.
+                      SYSTEM_PROMPT.md is your new system prompt. Make sure to fully read it.
                     </p>
                   </div>
                   <p className="text-zinc-500 text-xs mt-3">Save your changes after pasting.</p>
@@ -138,21 +119,16 @@ export default function GetStarted() {
               </div>
             </div>
 
-            {/* Step 3 */}
             <div className="p-6 rounded-2xl glass">
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-sm font-bold text-[#F97316]">
-                  3
-                </div>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F97316]/10 border border-[#F97316]/20 flex items-center justify-center text-sm font-bold text-[#F97316]">3</div>
                 <div className="flex-1">
                   <h3 className="font-bold text-lg mb-2">Upload the Prompt File</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-4">
                     Go to{" "}
                     <span className="text-white font-medium">Upload Files</span>{" "}
                     in your Space and upload{" "}
-                    <code className="text-[#FBBF24] bg-[#FBBF24]/10 px-1.5 py-0.5 rounded text-xs">
-                      SYSTEM_PROMPT.md
-                    </code>{" "}
+                    <code className="text-[#FBBF24] bg-[#FBBF24]/10 px-1.5 py-0.5 rounded text-xs">SYSTEM_PROMPT.md</code>{" "}
                     from this repo.
                   </p>
                   <a
@@ -165,22 +141,17 @@ export default function GetStarted() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
-        {/* Done banner */}
         <div className="p-6 rounded-2xl bg-[#4ADE80]/5 border border-[#4ADE80]/20 flex items-center gap-4 mb-16">
           <CheckCircle2 className="w-6 h-6 text-[#4ADE80] flex-shrink-0" />
           <div>
             <p className="font-semibold text-[#4ADE80]">That’s it — your Space is ready.</p>
-            <p className="text-zinc-400 text-sm mt-0.5">
-              Start a conversation in your Space to use Hephaestus Code.
-            </p>
+            <p className="text-zinc-400 text-sm mt-0.5">Start a conversation in your Space to use Hephaestus Code.</p>
           </div>
         </div>
 
-        {/* Why a separate file */}
         <div className="p-6 rounded-2xl glass">
           <div className="flex items-start gap-4">
             <div className="p-2.5 rounded-xl bg-[#F97316]/10 flex-shrink-0">
@@ -189,12 +160,8 @@ export default function GetStarted() {
             <div>
               <h3 className="font-bold mb-2">Why a separate file?</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Perplexity Spaces has a character limit on the system prompt
-                field. The full prompt (~34,000 characters) exceeds it, so it
-                lives in{" "}
-                <code className="text-[#FBBF24] bg-[#FBBF24]/10 px-1.5 py-0.5 rounded text-xs">
-                  SYSTEM_PROMPT.md
-                </code>{" "}
+                Perplexity Spaces has a character limit on the system prompt field. The full prompt (~34,000 characters) exceeds it, so it lives in{" "}
+                <code className="text-[#FBBF24] bg-[#FBBF24]/10 px-1.5 py-0.5 rounded text-xs">SYSTEM_PROMPT.md</code>{" "}
                 and the Space is instructed to read it on every conversation.
               </p>
             </div>

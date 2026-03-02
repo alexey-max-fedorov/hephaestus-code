@@ -16,15 +16,18 @@ export default function Header() {
           </div>
         </Link>
 
-        <div className="flex items-center gap-4">
-          <a
-            href="https://github.com/alexey-max-fedorov/perplexity-code"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:block text-sm font-medium text-zinc-400 hover:text-white transition-colors"
-          >
-            GitHub
-          </a>
+        <div className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-400">
+            <Link href="/story" className="hover:text-white transition-colors">Story</Link>
+            <a
+              href="https://github.com/alexey-max-fedorov/hephaestus-code"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              GitHub
+            </a>
+          </div>
           <Link href="/get-started">
             <button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all hover:scale-105 active:scale-95 shadow-lg shadow-[#F97316]/20 glow-blue-hover">
               Get Started
@@ -39,11 +42,11 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-[#0D0F14] border-b border-white/5 p-6 flex flex-col gap-6">
+          <Link href="/story" onClick={() => setIsMenuOpen(false)} className="text-lg font-medium text-zinc-400 hover:text-white">Story</Link>
           <a
-            href="https://github.com/alexey-max-fedorov/perplexity-code"
+            href="https://github.com/alexey-max-fedorov/hephaestus-code"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMenuOpen(false)}
@@ -52,9 +55,7 @@ export default function Header() {
             GitHub
           </a>
           <Link href="/get-started" onClick={() => setIsMenuOpen(false)}>
-            <span className="text-lg font-medium text-zinc-400 hover:text-white">
-              Get Started
-            </span>
+            <span className="text-lg font-medium text-zinc-400 hover:text-white">Get Started</span>
           </Link>
         </div>
       )}

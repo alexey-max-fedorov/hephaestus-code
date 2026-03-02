@@ -9,9 +9,7 @@ export default function Home() {
       <Header />
 
       <main>
-        {/* Hero Section */}
         <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-          {/* Background Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gradient-to-br from-[#F97316]/30 to-[#FBBF24]/20 blur-[80px] md:blur-[120px] -z-10 animate-float" />
 
           <div className="max-w-7xl mx-auto px-6 text-center">
@@ -42,7 +40,7 @@ export default function Home() {
                 Get started <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
-                href="https://github.com/alexey-max-fedorov/perplexity-code"
+                href="https://github.com/alexey-max-fedorov/hephaestus-code"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold border border-white/10 hover:bg-white/5 transition-all hover:border-white/20"

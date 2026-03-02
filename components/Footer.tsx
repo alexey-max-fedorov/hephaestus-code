@@ -9,26 +9,21 @@ export default function Footer() {
             Hephaestus <span className="text-[#F97316]">Code</span>
           </div>
           <div className="flex gap-8 text-sm text-zinc-500">
+            <Link href="/story" className="hover:text-white transition-colors">Story</Link>
             <a
-              href="https://github.com/alexey-max-fedorov/perplexity-code"
+              href="https://github.com/alexey-max-fedorov/hephaestus-code"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
               GitHub
             </a>
-            <Link href="/get-started" className="hover:text-white transition-colors">
-              Docs
-            </Link>
+            <Link href="/get-started" className="hover:text-white transition-colors">Docs</Link>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-zinc-500 text-xs">
-            A Claude Code–inspired assistant built on Perplexity Spaces.
-          </p>
-          <p className="text-zinc-600 text-xs">
-            © 2026 Alexey Fedorov. All rights reserved.
-          </p>
+          <p className="text-zinc-500 text-xs">A Claude Code–inspired assistant built on Perplexity Spaces.</p>
+          <p className="text-zinc-600 text-xs">© 2026 Alexey Fedorov. All rights reserved.</p>
         </div>
       </div>
     </footer>
