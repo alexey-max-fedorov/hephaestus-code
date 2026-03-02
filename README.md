@@ -1,4 +1,4 @@
-# Perplexity Code
+# Hephaestus Code
 
 > A Claude Code–inspired AI coding assistant built on [Perplexity Spaces](https://www.perplexity.ai/spaces).
 > Brings Plan Mode, GitHub MCP workflows, and structured engineering discipline to Perplexity's native tools.
