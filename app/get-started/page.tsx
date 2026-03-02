@@ -149,6 +149,7 @@ export default function GetStarted() {
           <div>
             <p className="font-semibold text-[#4ADE80]">That’s it — your Space is ready.</p>
             <p className="text-zinc-400 text-sm mt-0.5">Start a conversation in your Space to use Hephaestus Code.</p>
+            <p className="text-zinc-400 text-sm mt-0.5">Select <b>Claude Sonnet 4.6 Thinking</b> for the Model.</p>
           </div>
         </div>
 
