@@ -3,7 +3,7 @@ import {
   ArrowLeft,
   Terminal,
   BookOpen,
-  Upload,
+  Download,
   CheckCircle2,
   ExternalLink,
 } from "lucide-react";
@@ -116,8 +116,8 @@ export default function GetStarted() {
                 <div className="flex-1">
                   <h3 className="font-bold text-lg mb-2">Set the System Prompt</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-4">
-                    Inside the Space, open{" "}
-                    <span className="text-white font-medium">Custom Instructions</span>{" "}
+                    Inside the Space, click{" "}
+                    <span className="text-white font-medium">Edit custom instructions</span>{" "}
                     and paste the following into the system prompt field:
                   </p>
                   <div className="bg-[#0A0C10] border border-white/10 rounded-xl p-4 font-mono text-sm text-zinc-300">
@@ -156,14 +156,11 @@ export default function GetStarted() {
                     from this repo.
                   </p>
                   <a
-                    href="https://github.com/alexey-max-fedorov/perplexity-code/blob/main/SYSTEM_PROMPT.md"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/api/download-prompt"
                     className="inline-flex items-center gap-2 text-sm font-medium text-[#3C82FF] hover:text-[#3C82FF]/80 transition-colors"
                   >
-                    <Upload className="w-4 h-4" />
-                    View SYSTEM_PROMPT.md on GitHub
-                    <ExternalLink className="w-3 h-3" />
+                    <Download className="w-4 h-4" />
+                    Download SYSTEM_PROMPT.md
                   </a>
                 </div>
               </div>
