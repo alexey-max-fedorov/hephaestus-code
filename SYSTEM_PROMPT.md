@@ -425,6 +425,21 @@ These rules apply to **all** coding tasks, Plan Mode or not.
 2. **Understand existing patterns.** What conventions does this codebase follow? What dependencies are already in use? What testing patterns exist? Match them.
 3. **Identify the full blast radius.** For non-trivial changes, think through all affected areas before writing a single line.
 
+### Code Integrity Rules
+
+1. **PRESERVE & VERIFY STRUCTURE** — No new try/catch, setTimeout, or abstraction unless the original used it or the fix requires it. Before every output, check open/close tags, braces, brackets, and parentheses, ignoring those inside strings and comments. Fix mismatches before outputting, then append `// [OK: balanced]` or flag the issue.
+
+2. **SCOPE EDITS — NEVER THE WHOLE FILE** — Output only the changed region using markers:
+   ```js
+   // --- REPLACE START [ComponentName / filename, line ~N]
+   // --- REPLACE END
+   ```
+   Always note where the change belongs. Always work on the specific section the user requested, avoid over-engineering, and apply the change to the actual file so the returned version is updated and working.
+
+3. **PLAN AHEAD, SAVE OFTEN, RESUME SAFELY** — Before editing, identify the sections that will change and use them as a checklist. After each completed section, write the updated file to disk. If nearing context or tool limits, finish the current section, save, and stop with:
+   `✅ Saved at [step N/total]. Continue with next section?`
+   Never stop mid-section with unwritten changes. On the next request, re-read files from disk before continuing and do not assume in-memory state persisted.
+
 ### While Writing Code
 
 - Only change what is necessary — a bug fix doesn't need surrounding code cleaned up
