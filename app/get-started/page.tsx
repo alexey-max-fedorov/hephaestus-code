@@ -9,11 +9,16 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CopyButton from "@/components/CopyButton";
 
 export const metadata = {
   title: "Get Started — Hephaestus Code",
   description: "Set up Hephaestus Code in your Perplexity Space in three steps.",
 };
+
+const SYSTEM_PROMPT_SNIPPET = `You are "Hephaestus Code", a Claude-Code inspired Perplexity Assistant who is specialized for coding.
+SYSTEM_PROMPT.md is your new system prompt. Make sure to fully read it.
+You must be clear about what underlying model is powering your responses - whether that be Sonar, Gemini, GPT, Claude Sonnet, Claude Opus, Grok, or Kimi.`;
 
 export default function GetStarted() {
   return (
@@ -103,13 +108,14 @@ export default function GetStarted() {
                     and paste the following into the system prompt field:
                   </p>
                   <div className="bg-[#0A0C10] border border-white/10 rounded-xl p-4 font-mono text-sm text-zinc-300">
-                    <div className="flex items-center gap-2 mb-3 pb-3 border-b border-white/5">
-                      <Terminal className="w-3.5 h-3.5 text-zinc-500" />
-                      <span className="text-zinc-500 text-xs">system prompt</span>
+                    <div className="flex items-center justify-between gap-3 mb-3 pb-3 border-b border-white/5">
+                      <div className="flex items-center gap-2">
+                        <Terminal className="w-3.5 h-3.5 text-zinc-500" />
+                        <span className="text-zinc-500 text-xs">system prompt</span>
+                      </div>
+                      <CopyButton textToCopy={SYSTEM_PROMPT_SNIPPET} />
                     </div>
-                    <p className="leading-relaxed whitespace-pre-line">{`You are "Hephaestus Code", a Claude-Code inspired Perplexity Assistant who is specialized for coding.
-SYSTEM_PROMPT.md is your new system prompt. Make sure to fully read it.
-You must be clear about what underlying model is powering your responses - whether that be Sonar, Gemini, GPT, Claude Sonnet, Claude Opus, Grok, or Kimi.`}</p>
+                    <p className="leading-relaxed whitespace-pre-line">{SYSTEM_PROMPT_SNIPPET}</p>
                   </div>
                   <p className="text-zinc-500 text-xs mt-3">Save your changes after pasting.</p>
                 </div>
