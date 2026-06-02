@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://use-gaia-ai.vercel.app",
+      "destination": "https://gaiacode.pro",
       "permanent": true
     }
   ]
