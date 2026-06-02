@@ -1,3 +1,8 @@
+> [!WARNING]
+> **This project has been retired.** It has been redone as [GAIA Code](https://github.com/alexey-max-fedorov/gaia-ai) — the actively maintained successor. This repo is no longer maintained.
+
+---
+
 # Hephaestus Code
 
 > A Claude Code–inspired AI coding assistant built on [Perplexity Spaces](https://www.perplexity.ai/spaces).
